@@ -60,5 +60,3 @@ CHANGELOG
 
 2011-02-06      0.1
     * Initial release
-
-- clam@nyanya.org
