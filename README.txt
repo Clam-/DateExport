@@ -1,4 +1,4 @@
-DateExport 0.2
+DateExport (git)
 
 Allows you to export to a dated folder hierarchy.
 For example:
@@ -14,12 +14,13 @@ For example:
 WARNING: THERE IS NO USER INPUT CHECKING.
          PLEASE BE CAREFUL WITH YOUR INPUT.
 
-Note the use of /, I have no idea if \ will work as a path separator but since / works on windows
-anyway, I would stick with that.
+Note the use of /, I have no idea if \ will work as a path separator but since / 
+works on windows anyway, I would stick with that.
 
-You can select desired time source to use either the stored metadata for the time of image taken or
-the time of export.
-You can reset the "Do not show again" message prompt from the Lightroom Plug-in Manager window.
+You can select desired time source to use either the stored metadata for the time of
+image taken or the time of export.
+You can reset the "Do not show again" message prompt from the Lightroom Plug-in 
+Manager window.
 
 
 =========================
@@ -41,8 +42,8 @@ Available date formatting
 %M:    Minute with leading zero
 %S:    Second with leading zero
 %p:    AM/PM designation
-%P:    AM/PM designation, same as %p,but causes white space trimming to be applied as the last
-   formatting step.
+%P:    AM/PM designation, same as %p, but causes white space trimming to be applied
+    as the last formatting step.
 %%:    % symbol
 
 
@@ -53,11 +54,11 @@ CHANGELOG
 2012-04-05
     * Moved to github
 
-2012-03-29	0.2
+2012-03-29      0.2
     * Added selectable time source (metadata/now)
     * Handled copy errors a little better
-	
-2011-02-06	0.1
+
+2011-02-06      0.1
     * Initial release
-	
+
 - clam@nyanya.org
