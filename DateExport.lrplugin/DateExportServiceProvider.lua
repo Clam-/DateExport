@@ -31,4 +31,10 @@ return {
 	
 	processRenderedPhotos = DateExportTask.processRenderedPhotos,
 	
+	supportsIncrementalPublish = true,
+	
+	canExportVideo = true,
+	
+	small_icon = 'icon.png'
+	
 }
