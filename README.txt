@@ -11,14 +11,18 @@ For example:
     Date format: %Y/%m - %b
     will output to: S:\Somewhere\2010\08 - Aug\DSC_1527.jpg
 
-WARNING: THERE IS NO USER INPUT CHECKING.
+WARNING: THERE IS MINIMAL USER INPUT CHECKING.
          PLEASE BE CAREFUL WITH YOUR INPUT.
 
 Note the use of /, I have no idea if \ will work as a path separator but since / 
 works on windows anyway, I would stick with that.
 
+Time will be sources from the dateTimeOriginal metadata, and if not found, will use
+dateTimeDigitized.
 You can select desired time source to use either the stored metadata for the time of
 image taken or the time of export.
+There are options for the handling of missing time metadata.
+
 You can reset the "Do not show again" message prompt from the Lightroom Plug-in 
 Manager window.
 

@@ -5,10 +5,12 @@ Based on FtpUploadExportServiceProvider.lua
 
 ------------------------------------------------------------------------------]]
 
--- FtpUpload plug-in
+-- 
 require 'DateExportDialogSections'
 require 'DateExportTask'
+local LrDate = import 'LrDate'
 
+local curYear, curMonth, curDay, curHour, curMinute, curSecond = LrDate.timestampToComponents(LrDate.currentTime())
 
 --============================================================================--
 
@@ -24,6 +26,13 @@ return {
 		{ key = 'destPath', default = nil },
 		{ key = 'dateFormat', default = '' },
 		{ key = 'timeSource', default = 'metadata' },
+		{ key = 'timeMissing', default = 'unix' },
+		{ key = 'timeYear', default = curYear },
+		{ key = 'timeMonth', default = curMonth },
+		{ key = 'timeDay', default = curDay },
+		{ key = 'timeHour', default = curHour },
+		{ key = 'timeMinute', default = curMinute },
+		{ key = 'timeSecond', default = curSecond },
 	},
 
 	startDialog = DateExportDialogSections.startDialog,
