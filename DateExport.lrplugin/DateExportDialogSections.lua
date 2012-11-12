@@ -187,7 +187,7 @@ function DateExportDialogSections.sectionsForBottomOfDialog( f, propertyTable )
 			},
 			f:row {
 				f:static_text {
-					title = "If no dateTimeOriginal meta: ",
+					title = "If no datetime meta: ",
 					alignment = 'right',
 					width = share 'labelWidth'
 				},
@@ -227,7 +227,7 @@ function DateExportDialogSections.sectionsForBottomOfDialog( f, propertyTable )
 				f:edit_field {
 					value = bind "timeYear",
 					truncation = 'middle',
-					fill_horizontal = 0.2,
+					fill_horizontal = 0.1,
 					wraps = false,
 					tooltip = "Year",
 				},
@@ -238,7 +238,7 @@ function DateExportDialogSections.sectionsForBottomOfDialog( f, propertyTable )
 				f:edit_field {
 					value = bind "timeMonth",
 					truncation = 'middle',
-					fill_horizontal = 0.1,
+					fill_horizontal = 0.075,
 					wraps = false,
 					tooltip = "Month",
 				},
@@ -249,7 +249,7 @@ function DateExportDialogSections.sectionsForBottomOfDialog( f, propertyTable )
 				f:edit_field {
 					value = bind "timeDay",
 					truncation = 'middle',
-					fill_horizontal = 0.1,
+					fill_horizontal = 0.075,
 					wraps = false,
 					tooltip = "Day",
 				},
@@ -260,7 +260,7 @@ function DateExportDialogSections.sectionsForBottomOfDialog( f, propertyTable )
 				f:edit_field {
 					value = bind "timeHour",
 					truncation = 'middle',
-					fill_horizontal = 0.1,
+					fill_horizontal = 0.075,
 					wraps = false,
 					tooltip = "Hour (24 Hour time)",
 				},
@@ -271,7 +271,7 @@ function DateExportDialogSections.sectionsForBottomOfDialog( f, propertyTable )
 				f:edit_field {
 					value = bind "timeMinute",
 					truncation = 'middle',
-					fill_horizontal = 0.1,
+					fill_horizontal = 0.075,
 					wraps = false,
 					tooltip = "Minute",
 				},
@@ -282,14 +282,14 @@ function DateExportDialogSections.sectionsForBottomOfDialog( f, propertyTable )
 				f:edit_field {
 					value = bind "timeSecond",
 					truncation = 'middle',
-					fill_horizontal = 0.1,
+					fill_horizontal = 0.075,
 					wraps = false,
 					tooltip = "Second",
 				},
 			},
 			f:row {
 				f:static_text {
-					title = "Custom time preview:",
+					title = "Time preview:",
 					alignment = 'right',
 					width = share 'labelWidth'
 				},
